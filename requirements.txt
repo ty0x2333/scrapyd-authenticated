@@ -1,0 +1,3 @@
+scrapyd
+redis
+requests
