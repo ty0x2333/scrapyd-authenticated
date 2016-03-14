@@ -1,3 +1,5 @@
 scrapyd
 redis
 requests
+rq
+raven
