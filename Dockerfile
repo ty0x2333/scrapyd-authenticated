@@ -1,10 +1,10 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 # install chaperone
 RUN set -x \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
-       python3 python3-pip \
+       python3 python3-pip python3-setuptools \
     && pip3 install chaperone \
     && mkdir /etc/chaperone.d
 
@@ -12,7 +12,7 @@ RUN set -x \
 RUN set -x \
     && apt-get update \
     && apt-get install -y --no-install-recommends \
-      python python-dev python-pip \
+      python python-dev python-pip  python-setuptools \
       libssl-dev libxml2-dev libxslt-dev libffi-dev \
       build-essential
 
