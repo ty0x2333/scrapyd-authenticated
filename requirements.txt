@@ -3,3 +3,4 @@ redis
 requests
 rq
 raven
+Twisted==18.9.0
